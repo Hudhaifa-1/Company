@@ -1,0 +1,34 @@
+/* Numbers Section */
+
+.numbers{
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+      position: relative;
+      background-image: url(../images/background/background2.webp);
+    }
+    .numbers-items{ 
+      overflow: hidden;
+      padding:100px 0 ;
+    }
+    .number-item{
+      text-align: center;
+      float: left;
+      width: 25%;
+    }
+    .number-item i{
+      color: var(--mainColor);
+      margin-bottom: 15px;
+    
+    }
+    .number-item-title{
+      color: var(--whiteColor);
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 2px;
+    
+    }
+    .number-item-text{
+      color: var(--whiteColor);
+      text-transform: capitalize;
+    }

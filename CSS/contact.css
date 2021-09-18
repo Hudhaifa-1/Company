@@ -1,0 +1,114 @@
+/* Content Section  */
+.contact .section-header .line{
+    width: 35px;
+  }
+  
+  .contact-content{
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .contact-item{
+    width: 30%;
+    float: left;
+  }
+  .contact-item.mg{
+    margin: 0 5%;
+  }
+  
+  .contact-item-info{
+    text-align: center;
+  }
+  .contact-item i{
+    color: var(--mainColor);
+  }
+  .contact-item-title{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  .contact-item-desc{
+    color: var(--grayColor);
+  }
+  
+  .contact-inputs{
+  
+    overflow: hidden;
+    width: 70%;
+    height: 35px;
+    margin: 50px auto 20px auto;
+  
+  }
+  
+  .contact-inputs-item
+  {
+    width: 50%;
+    float: left;
+  }
+  .contact-inputs-item input{
+    padding-left: 10px;
+    width:95%;
+    height: 35px;
+    background-color: var(--bg-gray);
+    border: 0;
+    outline-width: 0;
+  }
+  
+  .contact-inputs-item input:focus{
+    border: 1px solid var(--mainColor);
+    border-bottom: 3px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+   
+  }
+  
+  .contact-input-messge{
+    width: 70%;
+    margin: auto;
+  }
+  .contact-input-messge input , .contact-input-messge textarea{
+    display: block;
+  }
+  .contact-input-messge input{
+    padding-left: 10px;
+    width:98%;
+    height: 35px;
+    background-color: var(--bg-gray);
+    border: 0; 
+    outline-width: 0;
+  }
+  .contact-input-messge textarea{
+    padding: 15px 0 0 10px;
+    height: 150px;
+    width:98%;
+    margin-top: 20px;
+    background-color: var(--bg-gray);
+    font-family: "Varela Round", sans-serif;
+    border: 0;
+    outline-width: 0;
+  }
+  .contact-input-messge input:focus{
+    border: 1px solid var(--mainColor);
+    border-bottom: 3px solid var(--mainColor);
+    
+  }
+  .contact-input-messge textarea:focus{
+    border: 1px solid var(--mainColor);
+    border-bottom: 3px solid var(--mainColor);
+    
+  }
+  .contact-btn{
+    display: block;
+   margin: 30px auto 0 auto ;
+   width: 140px;
+   height: 40px;
+   background-color: var(--mainColor);
+   color: var(--whiteColor);
+   border: 0;
+   outline: 0;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: opacity 0.5s;
+  }
+  .contact-btn:hover{
+    opacity: 0.8;
+  }
+  

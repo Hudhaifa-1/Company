@@ -1,0 +1,245 @@
+/*
+    1-Common Styles
+    2-General Styles
+    3-Sections
+        3.0 Header Section
+        3.1 Home Section
+        3.2 About Section
+        3.3 Protfolio Section 
+        3.4 Services Section 
+        3.5 Prices Section 
+        3.6 Team Section 
+        3.7 Blog Page 
+        3.8 Content Section
+        3.9 Footer Section 
+                
+ */
+
+/* 1- Common Styles */
+/* 
+     
+     - overlay
+     - opacity hover
+     - section header
+     - section padding
+     - hover effect 1 (left to right)
+     - hover effect 1 (top to bottom)
+     */
+.overlay {
+  position: relative;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hover-opacity {
+  transition: opacity 0.4s;
+}
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+.ltr-effect {
+  position: relative;
+}
+.ltr-effect::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #333;
+  transition: width 0.5s;
+  z-index: -1;
+}
+.ltr-effect:hover:after {
+  width: 100%;
+  
+}
+
+.tp-effect {
+  position: relative;
+}
+.tp-effect::after {
+  content: "";
+  position: absolute;
+  width:100%;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #333;
+  transition: height 0.5s;
+  z-index: -1;
+}
+.tp-effect:hover:after {
+  height: 100%;
+  
+}
+
+.about-item:hover .about-item-title {
+  color: var(--whiteColor);
+}
+.offer-item:hover .offer-item-title{
+  color: var(--whiteColor);
+}
+
+/* 
+ 2-General Css Styles
+ */
+h1,h2,h3,h4,h5,h6 {
+  font-family: montserrat, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Css3*/
+}
+
+
+/* R O O T */
+
+:root{
+  --mainColor: #6195ff;
+  --grayColor: #999;
+  --bg-gray: #f9f9f9;
+  --whiteColor:#fff;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both; /* to solve float problems */
+}
+
+.pd-y {
+  padding: 120px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-header .section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  background-color: var(--mainColor);
+  margin: 0 auto 70px auto;
+}
+
+ul{
+  list-style: none;
+}
+
+/* 3-Sections
+        3.0 Header Section  */
+
+.header {
+  height: 45px;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  background-color:rgba(0, 0, 0, 0.4)
+ }
+/* .header-content{
+    overflow: hidden;
+} */
+.contaner {
+  margin: auto;
+  width: 80%;
+}
+
+.contaner .logo {
+  
+  width: 40%;
+  float: left;
+}
+.contaner .logo img {
+  margin-top: 3px;
+  width: 20%;
+}
+.header .contaner .nav {
+  width: 60%;
+  text-align: right;
+  list-style: none;
+  float: left;
+}
+.header .nav > li {
+  text-align: center;
+  display: inline-block;
+}
+.header .nav > li > a {
+  font-size: 14px;
+  display: block;
+  padding: 15px 13px 30px 13px;
+  color: #fff;
+}
+
+.header .nav > li > a.activ::after,
+.header .nav > li > a::after {
+  content: " ";
+  height: 3px;
+  display: block;
+  background-color: var(--mainColor);
+  margin-top: 3px;
+  transition: 0.5s;
+}
+.header .nav > li > a.activ::after {
+  width: 100%;
+}
+.header .nav > li > a::after {
+  width: 0;
+}
+
+.header .nav > li > a:hover:after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 150px;
+  background-color: var(--mainColor);
+  height: 40px;
+  text-align: center;
+  left: -52%;
+  top: 80%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-menu li a {
+  color: var(--whiteColor);
+  display: block;
+  height: 40px;
+  padding: 10px;
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s, visibility 0.8s;
+}

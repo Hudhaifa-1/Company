@@ -1,0 +1,39 @@
+/* About Section  */
+
+
+.about-content {
+    overflow: hidden;
+  }
+  
+  .about-item {
+    float: left;
+    text-align: center;
+    width: 30%;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+  }
+  .about-item.mg {
+    margin: 0 5%;
+  }
+  .about-content .about-item .icon {
+    margin-bottom: 10px;
+    color: var(--mainColor);
+  }
+  .about-item-title {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    transition: 0.5s;
+  }
+  .about-item-desc {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: var(--grayColor);
+  }
+  
+  .about-item-link {
+    text-transform: capitalize;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+  }
+  
+  

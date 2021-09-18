@@ -1,0 +1,72 @@
+p {
+  color: teal;
+  font-size: 20px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  line-height: 3;
+  text-decoration: none;
+}
+div {
+  /* background-color: rgb(108, 92, 124); */
+  /* height: 50px; */
+  width: 50px;
+  min-width: 200;
+  max-width: 500;
+  /* background-image: url(../HTML/Elon2.jpg); */
+  background-repeat: no-repeat;
+
+  /* width: 10; */
+  background-position: center;
+  background-attachment: fixed;
+}
+.mydiv {
+  height: 75px;
+  width: 200px;
+  overflow: auto;
+  background-color: rebeccapurple;
+}
+.hom {
+  color: rgb(67, 165, 42);
+  margin: 100px;
+  text-align: center;
+  text-transform: capitalize;
+}
+button {
+  width: 20px;
+  min-width: 100px;
+  max-width: 200px;
+  background-color: yellow;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 20px;
+  border: red;
+  border-radius: 50px;
+}
+.my {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin: 50px;
+  padding: 100px;
+  border-bottom: double yellow;
+  outline-offset: solid yellowgreen;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  text-align: center;
+  /* list-style-type: none; */
+  list-style-position: inside;
+}
+/* table */
+
+.tab {
+  width: 200px;
+  height: 200px;
+  caption-side: bottom;
+}
+td {
+  vertical-align: middle;
+}
